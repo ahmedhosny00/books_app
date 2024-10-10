@@ -12,20 +12,25 @@ import '../../../core/widgets/custom_text_form_field.dart';
 import '../../../core/widgets/custtom_back_botton.dart';
 import '../widgets/your_voice_print_botton.dart';
 
-class LoginView extends StatelessWidget {
+class LoginView extends StatefulWidget {
   const LoginView({super.key});
 
-  
+  @override
+  State<LoginView> createState() => _LoginViewState();
+}
+
+class _LoginViewState extends State<LoginView> {
+  bool isObscureTest = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFC4D5CB),
       body: SingleChildScrollView(
-        child: SafeArea(
-            child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
-          child: Form(
-            
+        child: SingleChildScrollView(
+          child: SafeArea(
+              child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -37,20 +42,20 @@ class LoginView extends StatelessWidget {
                   hintText: AppStrings.enterYourEmail,
                 ),
                 SizedBox(height: 10.h),
-                const CustomTextFormField(
+                CustomTextFormField(
                   hintText: AppStrings.enterYourPassword,
-                  // isObscureText: isObscureTest,
-                  // suffixIcon: GestureDetector(
-                  //   onTap: () {
-                  //     setState(() {
-                  //       isObscureTest = !isObscureTest;
-                  //     });
-                  //   },
-                  //   child: Icon(
-                  //     isObscureTest ? Icons.visibility : Icons.visibility_off,
-                  //     size: 20.sp,
-                  //   ),
-                  // ),
+                  isObscureText: isObscureTest,
+                  suffixIcon: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        isObscureTest = !isObscureTest;
+                      });
+                    },
+                    child: Icon(
+                      isObscureTest ? Icons.visibility : Icons.visibility_off,
+                      size: 20.sp,
+                    ),
+                  ),
                 ),
                 SizedBox(height: 10.h),
                 Row(mainAxisAlignment: MainAxisAlignment.end, children: [
@@ -80,8 +85,8 @@ class LoginView extends StatelessWidget {
                 const DontHaveAccount(),
               ],
             ),
-          ),
-        )),
+          )),
+        ),
       ),
     );
   }
