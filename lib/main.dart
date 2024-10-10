@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:projct/features/login/manager/cubit/login_cubit.dart';
+import 'package:projct/features/login/view/login_view.dart';
 import 'package:projct/features/onboarding/view/onboarding_view.dart';
 
 void main() {
@@ -11,13 +14,22 @@ class EBookApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ScreenUtilInit(
-      designSize: Size(375, 812),
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
       minTextAdapt: true,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'E-Book App',
-        home: OnboardingView(),
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (BuildContext context) {
+              return LoginCubit();
+            },
+          ),
+        ],
+        child: const MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'E-Book App',
+          home: LoginView(),
+        ),
       ),
     );
   }

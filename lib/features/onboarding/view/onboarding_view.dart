@@ -34,10 +34,8 @@ class OnboardingView extends StatelessWidget {
                 SizedBox(height: 50.h),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const LoginView()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginView()));
                   },
                   child: CustomButton(
                     buttontext: AppStrings.login,
@@ -47,10 +45,10 @@ class OnboardingView extends StatelessWidget {
                 SizedBox(height: 16.h),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const RegisterView()));
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => const RegisterView()));
                   },
                   child: RegisterButton(
                     buttontext: AppStrings.register,

@@ -18,4 +18,9 @@ abstract class AppStrings {
   static const String username = 'Username';
   static const String password = 'Password';
   static const String confirmPassword = 'Confirm password';
+  static const String emailCannotBeEmpty = 'Email cannot be empty';
+  static const String enterValidEmail = 'Enter valid email';
+  static const String passwordCannotBeEmpty = 'Password cannot be empty';
+  static const String passwordMustBeAtLeast6Characters =
+      'Password must be at least 6 characters';
 }
