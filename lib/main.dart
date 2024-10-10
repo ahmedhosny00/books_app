@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:projct/features/login/manager/cubit/login_cubit.dart';
 import 'package:projct/features/login/view/login_view.dart';
 import 'package:projct/features/onboarding/view/onboarding_view.dart';
+import 'package:projct/features/register/manager/cubit/register_cubit.dart';
 
 void main() {
   runApp(const EBookApp());
@@ -24,11 +25,16 @@ class EBookApp extends StatelessWidget {
               return LoginCubit();
             },
           ),
+          BlocProvider(
+            create: (BuildContext context) {
+              return RegisterCubit();
+            },
+          ),
         ],
         child: const MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'E-Book App',
-          home: LoginView(),
+          home: OnboardingView(),
         ),
       ),
     );
