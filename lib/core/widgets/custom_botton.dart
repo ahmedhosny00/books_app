@@ -35,7 +35,7 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         backgroundColor:
-            MaterialStateProperty.all(backgroundColor ?? AppColors.redOrange33),
+            MaterialStateProperty.all(backgroundColor ?? AppColors.green),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         minimumSize: MaterialStateProperty.all(const Size(double.infinity, 50)),
         padding: MaterialStateProperty.all(

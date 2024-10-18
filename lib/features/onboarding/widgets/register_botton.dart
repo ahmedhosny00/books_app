@@ -32,7 +32,7 @@ class RegisterButton extends StatelessWidget {
         shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRadius ?? 8.0),
-            side: const BorderSide(width: 1.3, color: AppColors.redOrange33),
+            side: const BorderSide(width: 1.3, color: AppColors.green),
           ),
         ),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,

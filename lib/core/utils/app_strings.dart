@@ -1,14 +1,12 @@
 abstract class AppStrings {
-  static const String eText = 'E-';
-  static const String library = 'Library';
   static const String login = 'Login';
   static const String register = 'Register';
   static const String welcome = 'Welcome back! Glad to see you, Again!';
+  static const String welcomeToWhatsUp = 'welcome To WhatsUp';
   static const String enterYourEmail = 'Enter your email';
   static const String enterYourPassword = 'Enter your password';
   static const String forgotPassword = 'Forgot Password ?';
   static const String orLoginWith = 'Or Login with';
-  static const String yourVoicePrint = 'Your Voice Print';
   static const String dontHaveAccount = 'Don’t have an account? ';
   static const String registerNow = 'Register Now';
   static const String loginNow = 'Login Now';

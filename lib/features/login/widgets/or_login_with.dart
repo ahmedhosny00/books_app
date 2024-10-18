@@ -16,7 +16,7 @@ class OrLoginWith extends StatelessWidget {
           Expanded(
             child: Container(
               height: 1,
-              color: AppColors.whiteEE,
+              color: AppColors.white,
             ),
           ),
           Padding(
@@ -29,7 +29,7 @@ class OrLoginWith extends StatelessWidget {
           Expanded(
             child: Container(
               height: 1,
-              color: AppColors.whiteEE,
+              color: AppColors.white,
             ),
           ),
         ],

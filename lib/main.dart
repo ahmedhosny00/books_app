@@ -5,6 +5,7 @@ import 'package:projct/features/login/manager/cubit/login_cubit.dart';
 import 'package:projct/features/login/view/login_view.dart';
 import 'package:projct/features/onboarding/view/onboarding_view.dart';
 import 'package:projct/features/register/manager/cubit/register_cubit.dart';
+import 'package:projct/features/splash/view/splash_view.dart';
 
 void main() {
   runApp(const EBookApp());
@@ -33,8 +34,8 @@ class EBookApp extends StatelessWidget {
         ],
         child: const MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'E-Book App',
-          home: OnboardingView(),
+          title: 'whatsapp',
+          home: SplashView(),
         ),
       ),
     );

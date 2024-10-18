@@ -11,7 +11,7 @@ abstract class Functions {
     Bloc.observer = MyBlocObserver();
     // AppUtil.hideStatusBarPermanently();
     AppUtil.changeStatusBarTheme(
-      color: AppColors.tealCB,
+      color: AppColors.green,
       brightness: Brightness.light,
     );
   }

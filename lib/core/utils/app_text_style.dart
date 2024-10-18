@@ -5,7 +5,7 @@ import 'app_colors.dart';
 abstract class AppTextStyle {
   static TextStyle textStyle15w600() {
     return TextStyle(
-      color: AppColors.whiteEE,
+      color: AppColors.white,
       fontSize: 15.sp,
       fontWeight: FontWeight.w600,
     );
@@ -13,7 +13,7 @@ abstract class AppTextStyle {
 
   static TextStyle textStyle15w500() {
     return TextStyle(
-      color: AppColors.greyA1,
+      color: AppColors.green,
       fontSize: 15.sp,
       fontWeight: FontWeight.w500,
     );
@@ -21,7 +21,7 @@ abstract class AppTextStyle {
 
   static TextStyle textStyle15w700() {
     return TextStyle(
-      color: AppColors.redOrange33,
+      color: AppColors.green,
       fontSize: 15.sp,
       fontWeight: FontWeight.w700,
     );
@@ -29,7 +29,7 @@ abstract class AppTextStyle {
 
   static TextStyle textStyle15RedOrangew500() {
     return TextStyle(
-      color: AppColors.redOrange33,
+      color: AppColors.green,
       fontSize: 15.sp,
       fontWeight: FontWeight.w500,
     );
@@ -37,7 +37,7 @@ abstract class AppTextStyle {
 
   static TextStyle textStyle14w500() {
     return TextStyle(
-      color: AppColors.darkGrey7C,
+      color: AppColors.green,
       fontSize: 14.sp,
       fontWeight: FontWeight.w500,
     );
@@ -45,7 +45,7 @@ abstract class AppTextStyle {
 
   static TextStyle textStyle14w400() {
     return TextStyle(
-      color: AppColors.darkGrey7C,
+      color: AppColors.green,
       fontSize: 14.sp,
       fontWeight: FontWeight.w400,
     );
@@ -53,7 +53,7 @@ abstract class AppTextStyle {
 
   static TextStyle textStyle24w700() {
     return TextStyle(
-      color: AppColors.dark40,
+      color: AppColors.green,
       fontSize: 24.sp,
       fontWeight: FontWeight.w700,
     );
@@ -61,7 +61,7 @@ abstract class AppTextStyle {
 
   static TextStyle textStyle15Darkw500() {
     return TextStyle(
-      color: AppColors.dark40,
+      color: AppColors.green,
       fontSize: 15.sp,
       fontWeight: FontWeight.w400,
     );

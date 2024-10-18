@@ -28,8 +28,7 @@ class CustomTextFormField extends StatelessWidget {
       this.contentPadding,
       this.fillColor,
       this.validate,
-      required this.controller
-    });
+      required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +41,7 @@ class CustomTextFormField extends StatelessWidget {
             OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: const BorderSide(
-                color: AppColors.whiteEE,
+                color: AppColors.green,
                 width: 1.3,
               ),
             ),
@@ -50,18 +49,18 @@ class CustomTextFormField extends StatelessWidget {
             OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: const BorderSide(
-                color: AppColors.whiteEE,
+                color: AppColors.green,
                 width: 1.3,
               ),
             ),
         hintStyle: hintStyle ?? AppTextStyle.textStyle14w400(),
         hintText: hintText,
         suffixIcon: suffixIcon,
-        fillColor: fillColor ?? AppColors.whiteEE,
+        fillColor: fillColor ?? AppColors.white,
         filled: true,
       ),
       obscureText: isObscureText ?? false,
-      cursorColor: AppColors.darkGrey7C,
+      cursorColor: AppColors.green,
       style: AppTextStyle.textStyle15Darkw500(),
     );
   }
